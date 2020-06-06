@@ -29,7 +29,7 @@ I report anyway the basic steps to setup the Cluster. After successfully logging
 Connecting to the Cluster from an external application:
 
 - On the "Clusters" page click on "Connect your application". Select Driver->"Python" and Version->"3.6 or later"
-- Copy & Paste the string that looks like "mongodb+srv://<username>:<password>@dbname-n4azf.mongodb.net/<dbname>?retryWrites=true&w=majority" in srv_atlas_path variable of the AccountDao.py constructor. The "username" shall be replaced with the username you've created before and the "password" with the corresponding password.
+- Copy & Paste the string that looks like "mongodb+srv://username:password@dbname-n4azf.mongodb.net/<dbname>?retryWrites=true&w=majority" in srv_atlas_path variable of the AccountDao.py constructor. The "username" shall be replaced with the username you've created before and the "password" with the corresponding password.
 - Enjoy your Authentication Application!
 
 If you want to dig deep even further, I strongly recommend downloading MongoDB Compass that is an awesome intuitive GUI that helps you manage your database and collections. Create a new Account and see how the Collection is updated on the Atlas Cluster and on Compass as well!
