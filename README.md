@@ -22,14 +22,14 @@ I report anyway the basic steps to setup the Cluster. After successfully logging
 
 - Click on "Create a New Cluster" and name it. It takes a couple of moments to setup your new Cluster.
 - Click on "Database Access" on the left and "Add New Database User". Enter a valid username and password: remember the password as you'll need to connect to the database through the pymongo driver! As "Database User Privileges" select "Read and write to any database".
-- Click on "Network Access" -> "Add IP Address" and enter 0.0.0.0. As suggested by MongoDB, it is not a suggested choice to make your database accessible from any IP; for this project it's absolutely fine as no sensitive data are used.
+- Click on "Network Access" -> "Add IP Address" and enter 0.0.0.0. As suggested by MongoDB, it is not a good choice to make your database accessible from any IP; for this project it's absolutely fine as no sensitive data are used.
 - Go back to the "Clusters" page and click on "Collections". Click on "Add my Own Data" and type "cybermongo" both for the new database and for the new collection. 
 - Now everything is setup and you are ready to connect to your new Cluster from the python application!
 
 Connecting to the Cluster from an external application:
 
 - On the "Clusters" page click on "Connect your application". Select Driver->"Python" and Version->"3.6 or later"
-- Copy & Paste the string that looks like "mongodb+srv://<username>:<password>@dbname-n4azf.mongodb.net/<dbname>?retryWrites=true&w=majority" in srv_atlas_path variable of the AccountDao.py constructor. The <username> shall be replaced with the username you've created before and the <password> with the corresponding password.
+- Copy & Paste the string that looks like "mongodb+srv://<username>:<password>@dbname-n4azf.mongodb.net/<dbname>?retryWrites=true&w=majority" in srv_atlas_path variable of the AccountDao.py constructor. The "username" shall be replaced with the username you've created before and the "password" with the corresponding password.
 - Enjoy your Authentication Application!
 
 If you want to dig deep even further, I strongly recommend downloading MongoDB Compass that is an awesome intuitive GUI that helps you manage your database and collections. Create a new Account and see how the Collection is updated on the Atlas Cluster and on Compass as well!
