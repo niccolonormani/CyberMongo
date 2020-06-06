@@ -32,7 +32,8 @@ Connecting to the Cluster from an external application:
 - Copy & Paste the string that looks like "mongodb+srv://username:password@dbname-n4azf.mongodb.net/<dbname>?retryWrites=true&w=majority" in srv_atlas_path variable of the AccountDao.py constructor. The "username" shall be replaced with the username you've created before and the "password" with the corresponding password.
 - Enjoy your Authentication Application!
 
-If you want to dig deep even further, I strongly recommend downloading MongoDB Compass that is an awesome intuitive GUI that helps you manage your database and collections. Create a new Account and see how the Collection is updated on the Atlas Cluster and on Compass as well!
+If you want to dig deep even further, I strongly recommend downloading MongoDB Compass that is an awesome intuitive GUI that helps you manage your database and collections. 
+Create a new Account and see how the Collection is updated on the Atlas Cluster and on Compass as well!
 
 
 
